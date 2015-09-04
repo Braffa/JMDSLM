@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.braffa.sellem</groupId>
 	<artifactId>JMDSLM</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>JMDSLM</name>
 	<properties>
 		<jdk.version>1.7</jdk.version>

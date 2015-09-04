@@ -47,15 +47,16 @@ public class XmlUserToProductMsg implements Serializable {
 			ArrayList<XmlUserToProduct> lOfXmlUserToProduct) {
 		this.lOfXmlUserToProduct = lOfXmlUserToProduct;
 	}
+	
+	@XmlElement(name = "searchField")
+	public void setSearchField(String searchField) {
+		SearchField = searchField;
+	}
 
 	public String getSearchField() {
 		return SearchField;
 	}
 
-	@XmlElement(name = "searchField")
-	public void setSearchField(String searchField) {
-		SearchField = searchField;
-	}
 
 	public String getAction() {
 		return action;
