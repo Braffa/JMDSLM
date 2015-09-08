@@ -23,7 +23,7 @@ public class XmlRegisteredUser implements Serializable {
 
 	private String telephone;
 
-	private Login login;
+	private XmlLogin login;
 
 	private Date crDate;
 
@@ -39,7 +39,7 @@ public class XmlRegisteredUser implements Serializable {
 		this.firstname = registeredUser.getFirstname();
 		this.lastname = registeredUser.getLastname();
 		this.telephone = registeredUser.getTelephone();
-		this.login = new Login();
+		this.login = new XmlLogin();
 		this.login.setUserId(registeredUser.getUserId()); 
 		this.crDate = registeredUser.getCrDate();
 		this.updDate = registeredUser.getUpdDate();
@@ -93,11 +93,11 @@ public class XmlRegisteredUser implements Serializable {
 		this.updDate = updDate;
 	}
 
-	public Login getLogin() {
+	public XmlLogin getLogin() {
 		return login;
 	}
 
-	public void setLogin(Login login) {
+	public void setLogin(XmlLogin login) {
 		this.login = login;
 	}
 
